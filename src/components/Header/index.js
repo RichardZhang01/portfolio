@@ -3,9 +3,18 @@ import Navbar from './Navbar'
 
 const name = 'Richard Zhang';
 const navItems = [
-    'About',
-    'Portfolio',
-    'Contact'
+    {
+        name: 'About',
+        href: '#about'
+    },
+    {
+        name: 'Portfolio',
+        href: '#portfolio'
+    },
+    {
+        name: 'Contact',
+        href: '#contact'
+    }
 ];
 
 function Header() {
