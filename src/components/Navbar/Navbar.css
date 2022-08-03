@@ -1,0 +1,33 @@
+:root {
+  --dark: rgb(34, 34, 34);
+  --light: rgb(223, 223, 223);
+}
+
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav--logo {
+  width: 100px;
+  border-radius: 10px;
+}
+
+.nav--name {
+  margin-right: auto;
+  margin-left: 10px;
+}
+
+.list-group {
+  display: flex;
+  list-style: none;
+}
+
+.list-group-item {
+  margin: 0 10px;
+}
+
+.list-group-item > a {
+  color: var(--light);
+  text-decoration: none;
+}

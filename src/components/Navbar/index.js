@@ -1,15 +1,15 @@
 import React from 'react';
-// import logo from '../assets/images/logo.jpg'
+import './Navbar.css'
 
-function Navbar(props) {
+export default function Navbar(props) {
     return (
-        <nav>
-            {/* <img className="nav--logo" src={logo} alt='site logo' /> */}
-            <h3 className="nav--name">{props.name}</h3>
-            <ul className="list-group">
-                {props.navItems.map((item, i) => (
+        <nav className="center">
+            <img className="nav--logo" src={props.logo} alt='site logo' />
+            <h3 className="nav--name">{props.owner}</h3>
+            <ul className="list-group center">
+                {props.navItems.map((element, i) => (
                     <li className="list-group-item" key={i}>
-                        <a href={item.href}>{item.name}</a>
+                        <a href={element.href}>{element.item}</a>
                     </li>
                 ))}
             </ul>
@@ -23,5 +23,3 @@ function Navbar(props) {
         </nav>
     )
 }
-
-export default Navbar;
