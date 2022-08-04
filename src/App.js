@@ -1,7 +1,8 @@
 import './App.css';
+import logo from './assets/images/logo4.jpg'
 import { navItems, owner } from './utils/data'
 import Navbar from './components/Navbar'
-import logo from './assets/images/logo4.jpg'
+import Drawer from './components/Drawer'
 
 function App() {
   return (
@@ -11,6 +12,9 @@ function App() {
           navItems={navItems}
           owner={owner}
           logo={logo}
+        />
+        <Drawer 
+          navItems={navItems}
         />
       </header>
     </div>

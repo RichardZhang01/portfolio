@@ -1,16 +1,12 @@
-:root {
-  --dark: rgb(34, 34, 34);
-  --light: rgb(223, 223, 223);
-}
-
-nav {
+.desktop-nav {
   max-width: 1200px;
   margin: 0 auto;
+  margin-top: 10px;
 }
 
 .nav--logo {
   width: 100px;
-  border-radius: 10px;
+  border-radius: 50%;
 }
 
 .nav--name {
@@ -30,4 +26,23 @@ nav {
 .list-group-item > a {
   color: var(--light);
   text-decoration: none;
+}
+
+.underline {
+  display: inline-block;
+  padding-block: 4px;
+  background-image: linear-gradient(rgb(223, 223, 223), rgb(223, 223, 223));
+  background-position: 0 100%; 
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  transition:
+    background-size 0.3s,
+    background-position 0s 0.3s; 
+}
+
+.underline:hover,
+.underline:focus,
+.underline:active {
+  background-position: 100% 100%; 
+  background-size: 100% 2px;
 }
