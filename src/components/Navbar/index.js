@@ -8,23 +8,18 @@ export default function Navbar(props) {
         <nav className="desktop-nav center">
             <img className="nav--logo" src={props.logo} alt='site logo' />
             <h3 className="nav--name">{props.owner}</h3>
-            <ul className="list-group center">
+            <ul className="nav-list center">
                 {props.navItems.map((element, i) => (
-                    <li className="list-group-item" key={i}>
+                    <li className="nav-list-item" key={i}>
                         <a href={element.href}>
                             <span className="underline">{element.item}</span>
                         </a>
                     </li>
                 ))}
             </ul>
-            <DrawerButton />
-            {/* <button
-            type="button"
-            aria-label="toggle navigation"
-            class="btn btn--icon nav__hamburger"
-            >
-                <i aria-hidden="true" class="fas fa-bars"></i>
-            </button> */}
+            <DrawerButton 
+                drawerToggleHandler={props.drawerToggleHandler}
+            />
         </nav>
     )
 }

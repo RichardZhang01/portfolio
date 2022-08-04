@@ -1,5 +1,6 @@
 .desktop-nav {
   max-width: 1200px;
+  height: 80px;
   margin: 0 auto;
   margin-top: 10px;
 }
@@ -12,18 +13,20 @@
 .nav--name {
   margin-right: auto;
   margin-left: 10px;
+  font-size: 1.3rem;
 }
 
-.list-group {
+.nav-list {
   display: flex;
   list-style: none;
 }
 
-.list-group-item {
+.nav-list-item {
   margin: 0 10px;
+  font-size: 1.15rem
 }
 
-.list-group-item > a {
+.nav-list-item > a {
   color: var(--light);
   text-decoration: none;
 }
@@ -45,4 +48,22 @@
 .underline:active {
   background-position: 100% 100%; 
   background-size: 100% 2px;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-list {
+    display: none;
+  }
+
+  .nav--name {
+    font-size: 1rem;
+  }
+
+  .nav-list-item {
+    font-size: 1rem;
+  }
+
+  .nav--logo {
+    width: 80px;
+  }
 }

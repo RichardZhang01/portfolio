@@ -1,5 +1,14 @@
 .mobile-nav {
-    background: var(--dark)
+    background: var(--dark);
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.nav-open {
+    transform: translateX(0%);
 }
 
 .drawer-list {
@@ -9,4 +18,10 @@
     align-items: center;
     padding: 10px 0;
     margin: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .mobile-nav {
+        display: none;
+    }
 }
