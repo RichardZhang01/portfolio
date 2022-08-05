@@ -1,0 +1,91 @@
+#about {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.about-title {
+    font-size: 2.4rem;
+    margin-bottom: 0;
+}
+
+.about-title-owner {
+    color: var(--accent);
+}
+
+.about-description {
+    width: 90%;
+    font-size: 1.4rem;
+}
+
+.about-content {
+    text-align: left;
+    width: 90%;
+    line-height: 1.4rem;
+    font-size: 1.1rem;
+    margin-top: 5px;
+}
+
+.about-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 175px;
+}
+
+.about-resume-btn {
+    text-decoration: none;
+    color: var(--light);
+    border: 1.5px solid var(--light);
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8rem;
+    border-radius: 3px;
+    display: inline-block;
+    background: linear-gradient(to right, var(--light) 0%, var(--light) 50%, #ffffff00 50%, #ffffff00 100%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: all 0.3s;
+
+}
+
+.about-resume-btn:hover,
+.about-resume-btn:active,
+.about-resume-btn:focus {
+    background-position: 0 0;
+    color: var(--dark);
+}
+
+.about-links-icons {
+    color: var(--light);
+    transition: color 0.2s linear;
+}
+
+.about-links-icons:hover,
+.about-links-icons:active,
+.about-links-icons:focus {
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .about-title {
+        font-size: 1.8rem;
+        margin-bottom: 0;
+    }
+    
+    .about-description {
+        width: 90%;
+        font-size: 1.1rem;
+    }
+    
+    .about-content {
+        text-align: left;
+        width: 90%;
+        line-height: 1.1rem;
+        font-size: 0.9rem;
+    }
+
+}

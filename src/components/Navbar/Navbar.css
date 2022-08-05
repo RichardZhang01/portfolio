@@ -22,8 +22,8 @@
 }
 
 .nav-list-item {
-  margin: 0 10px;
-  font-size: 1.15rem
+  margin: 2px 15px;
+  font-size: 1.15rem;
 }
 
 .nav-list-item > a {
@@ -34,7 +34,7 @@
 .underline {
   display: inline-block;
   padding-block: 4px;
-  background-image: linear-gradient(rgb(223, 223, 223), rgb(223, 223, 223));
+  background-image: linear-gradient(var(--accent), var(--accent));
   background-position: 0 100%; 
   background-size: 0% 2px;
   background-repeat: no-repeat;

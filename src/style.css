@@ -1,6 +1,7 @@
 :root {
   --dark: rgb(34, 34, 34);
   --light: rgb(223, 223, 223);
+  --accent: rgb(219, 54, 54);
 }
 
 body {

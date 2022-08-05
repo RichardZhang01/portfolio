@@ -1,9 +1,16 @@
-import React, { useState } from 'react';
 import './App.css';
+import React, { useState } from 'react';
+import { 
+  navItems, 
+  owner,
+  about_desc,
+  about,
+  links 
+} from './utils/data'
 import logo from './assets/images/logo4.jpg'
-import { navItems, owner } from './utils/data'
 import Navbar from './components/Navbar'
 import Drawer from './components/Drawer'
+import About from './components/About'
 
 function App() {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -26,6 +33,14 @@ function App() {
           drawerOpen={drawerOpen}
         />
       </header>
+      <main>
+        <About 
+          owner={owner}
+          aboutDescription={about_desc}
+          about={about}
+          links={links}
+        />
+      </main>
     </div>
   );
 }
