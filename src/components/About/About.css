@@ -11,10 +11,6 @@
     margin-bottom: 0;
 }
 
-.about-title-owner {
-    color: var(--accent);
-}
-
 .about-description {
     width: 90%;
     font-size: 1.4rem;
@@ -77,13 +73,35 @@
     }
     
     .about-description {
-        width: 90%;
         font-size: 1.1rem;
     }
     
     .about-content {
         text-align: left;
-        width: 90%;
+        line-height: 1.1rem;
+        font-size: 0.9rem;
+    }
+
+}
+
+@media only screen and (max-width: 560px) {
+    #about {
+        align-items: initial;
+    }
+
+    .about-title {
+        text-align: left;
+    }
+    
+    .about-description {
+        text-align: left;
+        width: 100%;
+        font-size: 1.1rem;
+    }
+    
+    .about-content {
+        text-align: left;
+        width: 100%;
         line-height: 1.1rem;
         font-size: 0.9rem;
     }

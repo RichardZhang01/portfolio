@@ -6,7 +6,7 @@ export default function About(props) {
     return (
         <section id='about'>
             <h1 className='about-title'>
-                Hello, my name is <span className='about-title-owner'>{props.owner}</span>.
+                Hello, my name is <span className='highlight'>{props.owner}</span>.
             </h1>
             <h2 className='about-description'>
                 {props.aboutDescription}

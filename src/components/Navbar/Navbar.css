@@ -66,4 +66,22 @@
   .nav--logo {
     width: 80px;
   }
+
+  .desktop-nav {
+    height: 50px;
+  }
+}
+
+@media only screen and (max-width: 310px) {
+  .nav--logo {
+      display: none;
+  }
+
+  .nav--name {
+    margin-left: 0;
+  }
+
+  .nav-list-item {
+    font-size: 0.8rem
+  }
 }

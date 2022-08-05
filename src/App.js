@@ -3,14 +3,16 @@ import React, { useState } from 'react';
 import { 
   navItems, 
   owner,
-  about_desc,
+  aboutDesc,
   about,
-  links 
+  links,
+  projectsData, 
 } from './utils/data'
 import logo from './assets/images/logo4.jpg'
 import Navbar from './components/Navbar'
 import Drawer from './components/Drawer'
 import About from './components/About'
+import Projects from './components/Projects';
 
 function App() {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -36,11 +38,15 @@ function App() {
       <main>
         <About 
           owner={owner}
-          aboutDescription={about_desc}
+          aboutDescription={aboutDesc}
           about={about}
           links={links}
         />
+        <Projects 
+          projectsData={projectsData}
+        />
       </main>
+      <div style={{  height: '100vh' }}/>
     </div>
   );
 }

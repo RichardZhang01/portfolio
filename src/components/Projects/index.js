@@ -1,8 +1,65 @@
 import React from 'react';
+import './Projects.css'
 
-function Portfolio(props) {
+export default function Projects(props) {
     return (
-        <section>
+        <section id='projects'>
+            <h1 className='projects-title'>
+                <span className='highlight'>P</span>rojects
+            </h1>
+            <div className='projects-container'>
+                {
+                    props.projectsData.map((project) => {
+                        return (
+                            <div 
+                                className='project-card' 
+                                key={project.title}
+                            >
+                                <h3 className='project-title'>
+                                    {project.title}
+                                </h3>
+                                <p className='project-description'>
+                                    {project.description}
+                                </p>
+                                <ul className='project-stack'>
+                                    {
+                                        project.stack.map((stackItem) => {
+                                            return (
+                                                <li 
+                                                    className='project-stack-item' 
+                                                    key={`${project.title}, ${stackItem}`}
+                                                >
+                                                    {stackItem}
+                                                </li>
+                                            )
+                                        })
+                                    }
+                                </ul>
+                                <a
+                                    href={project.github}
+                                    aria-label={`github repo for ${project.title}`}
+                                    className='project-github'
+                                >
+                                    <i aria-hidden="true" class="fab fa-github"></i>
+                                </a>
+                                <a
+                                    href={project.url}
+                                    aria-label={`link to ${project.title} app`}
+                                    className='project-url'
+                                >
+                                    <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        )
+                    })
+                }
+            </div>
+        </section>
+    )
+}
+
+
+/* <section>
             <h2 class="section__title">Portfolio</h2>
 
             <div class="projects__grid">
@@ -94,8 +151,4 @@ function Portfolio(props) {
                 </a>
             </div>
             </div>
-        </section>
-    )
-}
-
-export default Portfolio;
+        </section> */

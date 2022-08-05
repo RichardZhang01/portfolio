@@ -24,3 +24,7 @@ code {
   display: flex;
   align-items: center;
 }
+
+.highlight {
+  color: var(--accent)
+}
