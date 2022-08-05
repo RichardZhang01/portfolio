@@ -5,15 +5,20 @@
   margin-top: 10px;
 }
 
-.nav--logo {
+.nav-logo {
   width: 100px;
   border-radius: 50%;
 }
 
-.nav--name {
+.nav-name {
   margin-right: auto;
   margin-left: 10px;
   font-size: 1.3rem;
+}
+
+.nav-name-span {
+  color: var(--light);
+  margin-right: 7px;
 }
 
 .nav-list {
@@ -55,15 +60,15 @@
     display: none;
   }
 
-  .nav--name {
-    font-size: 1rem;
+  .nav-name {
+    font-size: 1.2rem;
   }
 
   .nav-list-item {
     font-size: 1rem;
   }
 
-  .nav--logo {
+  .nav-logo {
     width: 80px;
   }
 
@@ -73,15 +78,19 @@
 }
 
 @media only screen and (max-width: 310px) {
-  .nav--logo {
+  .nav-logo {
       display: none;
   }
 
-  .nav--name {
+  .nav-name {
     margin-left: 0;
   }
 
   .nav-list-item {
     font-size: 0.8rem
+  }
+
+  .nav-name-span {
+    display: none;
   }
 }

@@ -26,7 +26,6 @@ function App() {
       <header>
         <Navbar
           navItems={navItems}
-          owner={owner}
           logo={logo}
           drawerToggleHandler={drawerToggleHandler}
         />
@@ -46,7 +45,6 @@ function App() {
           projectsData={projectsData}
         />
       </main>
-      <div style={{  height: '100vh' }}/>
     </div>
   );
 }

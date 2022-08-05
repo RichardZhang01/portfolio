@@ -35,20 +35,22 @@ export default function Projects(props) {
                                         })
                                     }
                                 </ul>
-                                <a
-                                    href={project.github}
-                                    aria-label={`github repo for ${project.title}`}
-                                    className='project-github'
-                                >
-                                    <i aria-hidden="true" class="fab fa-github"></i>
-                                </a>
-                                <a
-                                    href={project.url}
-                                    aria-label={`link to ${project.title} app`}
-                                    className='project-url'
-                                >
-                                    <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-                                </a>
+                                <div className='project-icons-container'>
+                                    <a
+                                        href={project.github}
+                                        aria-label={`github repo for ${project.title}`}
+                                        className='project-github project-icon'
+                                    >
+                                        <i aria-hidden="true" class="fab fa-github fa-lg"></i>
+                                    </a>
+                                    <a
+                                        href={project.url}
+                                        aria-label={`link to ${project.title} app`}
+                                        className='project-url project-icon'
+                                    >
+                                        <i aria-hidden="true" class="fas fa-external-link-alt fa-lg"></i>
+                                    </a>
+                                </div>
                             </div>
                         )
                     })
