@@ -41,14 +41,14 @@ export default function Projects(props) {
                                         aria-label={`github repo for ${project.title}`}
                                         className='project-github project-icon'
                                     >
-                                        <i aria-hidden="true" class="fab fa-github fa-lg"></i>
+                                        <i aria-hidden="true" className="fab fa-github fa-lg"></i>
                                     </a>
                                     <a
                                         href={project.url}
                                         aria-label={`link to ${project.title} app`}
                                         className='project-url project-icon'
                                     >
-                                        <i aria-hidden="true" class="fas fa-external-link-alt fa-lg"></i>
+                                        <i aria-hidden="true" className="fas fa-external-link-alt fa-lg"></i>
                                     </a>
                                 </div>
                             </div>

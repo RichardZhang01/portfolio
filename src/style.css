@@ -21,11 +21,23 @@ code {
     monospace;
 }
 
-.center {
-  display: flex;
-  align-items: center;
-}
-
 .highlight {
   color: var(--accent)
+}
+
+body::-webkit-scrollbar {
+  width: 5px;               
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--dark);       
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--light);    
+  border-radius: 20px;     
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--accent);
 }

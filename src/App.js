@@ -7,14 +7,17 @@ import {
   about,
   links,
   projectsData, 
-  techStack
-} from './utils/data'
-import logo from './assets/images/logo4.jpg'
-import Navbar from './components/Navbar'
-import Drawer from './components/Drawer'
-import About from './components/About'
+  techStack,
+  contactData
+} from './utils/data';
+import logo from './assets/images/logo4.jpg';
+import Navbar from './components/Navbar';
+import Drawer from './components/Drawer';
+import About from './components/About';
 import Projects from './components/Projects';
 import TechStack from './components/TechStack';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -49,7 +52,13 @@ function App() {
         <TechStack 
           techStack={techStack}
         />
+        <Contact 
+          contactData={contactData}
+        />
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

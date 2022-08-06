@@ -35,10 +35,10 @@
 .about-resume-btn {
     text-decoration: none;
     color: var(--light);
-    border: 1.5px solid var(--light);
+    border: 2px solid var(--light);
     text-align: center;
-    padding: 10px;
-    font-size: 0.8rem;
+    padding: 12px;
+    font-size: 0.9rem;
     border-radius: 3px;
     display: inline-block;
     background: linear-gradient(to right, var(--light) 0%, var(--light) 50%, #ffffff00 50%, #ffffff00 100%);

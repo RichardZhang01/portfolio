@@ -23,7 +23,6 @@ export const links = {
     resume: 'https://docs.google.com/document/d/1dOrSFonWHGFHaDSeTKwmNgPrzrzdo89B4IeTCzyIx0Q/edit?usp=sharing',
     github: 'https://github.com/RichardZhang01',
     linkedin: 'https://www.linkedin.com/in/richard-zhiyuan-zhang/',
-    email: 'richardzhiyuanzhang@gmail.com'
 }
 
 export const projectsData = [
@@ -97,4 +96,22 @@ export const techStack = [
     'IndexedDB',
     'Sequelize',
     'Git',
+]
+
+export const contactData = [
+    {
+        text: 'richardzhiyuanzhang@gmail.com',
+        link: 'mailto:richardzhiyuanzhang@gmail.com',
+        iconClass: 'fa-solid fa-envelope fa-lg' 
+    },
+    {
+        text: 'RichardZhang01',
+        link: 'https://github.com/RichardZhang01',
+        iconClass: 'fab fa-github fa-lg' 
+    },
+    {
+        text: 'Richard Zhang',
+        link: 'https://www.linkedin.com/in/richard-zhiyuan-zhang/',
+        iconClass: 'fab fa-linkedin fa-lg' 
+    },
 ]
