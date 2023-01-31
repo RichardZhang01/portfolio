@@ -46,7 +46,7 @@ export const projectsData = [
     title: "Netflix Clone",
     description:
       "A Netflix clone made using React and powered using The Movie Database API. Styled using vanilla CSS. Currently (Feb, 2023) a work in progress.",
-    stack: ["React", "CSS", "JavaScript", "HTML", "React-router", "TMDB-API"],
+    stack: ["React", "CSS", "JavaScript", "HTML", "React-Router", "TMDB-API"],
     github: "https://github.com/RichardZhang01/date-night-generator",
     url: "https://richardzhang01.github.io/date-night-generator/",
   },
