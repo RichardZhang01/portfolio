@@ -108,7 +108,7 @@ export const techStack = [
     'Prisma',
     'Swagger.IO',
     'Django-rest-framework',
-    'graphene',
+    'Graphene',
 ]
 
 export const contactData = [
