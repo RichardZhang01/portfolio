@@ -1,29 +1,32 @@
-export const owner = 'Richard Zhang';
+export const owner = "Richard Zhang";
 
 export const navItems = [
-    {
-        item: 'Projects',
-        href: '#projects'
-    },
-    {
-        item: 'Tech Stack',
-        href: '#tech-stack'
-    },
-    {
-        item: 'Contact',
-        href: '#contact'
-    }
+  {
+    item: "Projects",
+    href: "#projects",
+  },
+  {
+    item: "Tech Stack",
+    href: "#tech-stack",
+  },
+  {
+    item: "Contact",
+    href: "#contact",
+  },
 ];
 
-export const aboutDesc = 'Welcome to my portfolio page built with React. It\'s designed to be minimalistic and straightforward, which reflects my style.'
+export const aboutDesc =
+  "Welcome to my portfolio page built with React. It's designed to be minimalistic and straightforward, which reflects my style.";
 
-export const about = 'I am an aspiring full-stack developer. I have been coding for a few months and I have loved every second of it. My educational background is in forensic science and nursing, an odd mix of disciplines for sure. But that makes me extremely adaptable, adept at working in teams and communication, and most importantly, I have learned how to learn. I recently earned a full-stack development certificate from University of Toronto\'s coding bootcamp, and I will continue to build on the skills I have developed to improve my abilities and pursue my passion for programming!'
+export const about =
+  "I am an aspiring full-stack developer. I have been coding for a few months and I have loved every second of it. My educational background is in forensic science and nursing, an odd mix of disciplines for sure. But that makes me extremely adaptable, adept at working in teams and communication, and most importantly, I have learned how to learn. I recently earned a full-stack development certificate from University of Toronto's coding bootcamp, and I will continue to build on the skills I have developed to improve my abilities and pursue my passion for programming!";
 
 export const links = {
-    resume: 'https://docs.google.com/document/d/1dOrSFonWHGFHaDSeTKwmNgPrzrzdo89B4IeTCzyIx0Q/edit?usp=sharing',
-    github: 'https://github.com/RichardZhang01',
-    linkedin: 'https://www.linkedin.com/in/richard-zhiyuan-zhang/',
-}
+  resume:
+    "https://docs.google.com/document/d/1dOrSFonWHGFHaDSeTKwmNgPrzrzdo89B4IeTCzyIx0Q/edit?usp=sharing",
+  github: "https://github.com/RichardZhang01",
+  linkedin: "https://www.linkedin.com/in/richard-zhiyuan-zhang/",
+};
 
 export const projectsData = [
   {
@@ -43,12 +46,22 @@ export const projectsData = [
     url: "https://netflix-clone-e2d22.web.app/",
   },
   {
-    title: "Netflix Clone",
+    title: "Ceipt Geek",
     description:
-      "A Netflix clone made using React and powered using The Movie Database API. Styled using vanilla CSS. Currently (Feb, 2023) a work in progress.",
-    stack: ["React", "CSS", "JavaScript", "HTML", "React-Router", "TMDB-API"],
-    github: "https://github.com/RichardZhang01/date-night-generator",
-    url: "https://richardzhang01.github.io/date-night-generator/",
+      "Ceipt Geek helps you organize your receipts by providing a convenient place for you to upload, edit, and view your receipts online.",
+    stack: [
+      "Next.js",
+      "Django",
+      "JavaScript",
+      "TypeScript",
+      "Python",
+      "GraphQL",
+      "Formik",
+      "Material-UI",
+      "JWT",
+    ],
+    github: "https://github.com/TiciaD/Receipt-Tracker",
+    url: "https://ceipt-geek-gb2g.onrender.com/",
   },
   {
     title: "Text-Editor",
@@ -69,62 +82,69 @@ export const projectsData = [
 ];
 
 export const techStack = [
-    'HTML',
-    'CSS',
-    'JavaScript',
-    'React',
-    'SQL',
-    "MongoDB",
-    'Socket.IO',
-    'ORM',
-    'TDD',
-    'Foundation',
-    'Bulma',
-    'Bootstrap',
-    'JQuery',
-    'MVC',
-    'MERN',
-    'MySQL',
-    'Mongoose',
-    'Express.js',
-    'Node.js',
-    'PWA',
-    'Service-Workers',
-    'Workbox',
-    'Handlebars.js',
-    'REST-APIs',
-    'NoSQL',
-    'Apollo-Server',
-    'GraphQL',
-    'Express-Session',
-    'JWT',
-    'IndexedDB',
-    'Sequelize',
-    'Git',
-    'TypeScript',
-    'Python',
-    'Django',
-    'Nest.JS',
-    'Prisma',
-    'Swagger.IO',
-    'Django-rest-framework',
-    'Graphene',
-]
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "React",
+  "SQL",
+  "MongoDB",
+  "Socket.IO",
+  "ORM",
+  "TDD",
+  "Foundation",
+  "Bulma",
+  "Bootstrap",
+  "JQuery",
+  "MVC",
+  "MERN",
+  "MySQL",
+  "Mongoose",
+  "Express.js",
+  "Node.js",
+  "PWA",
+  "Service-Workers",
+  "Workbox",
+  "Handlebars.js",
+  "REST-APIs",
+  "NoSQL",
+  "Apollo-Server",
+  "GraphQL",
+  "Express-Session",
+  "JWT",
+  "IndexedDB",
+  "Sequelize",
+  "Git",
+  "TypeScript",
+  "Python",
+  "Django",
+  "Nest.JS",
+  "Prisma",
+  "Swagger.IO",
+  "Django-rest-framework",
+  "Graphene",
+  "Next.js",
+  "Formik",
+  "CockroachDB",
+  "Cloudinary",
+  "Render",
+  "Material-UI",
+  "Chart.js",
+];
 
 export const contactData = [
-    {
-        text: 'richardzhiyuanzhang@gmail.com',
-        link: 'mailto:richardzhiyuanzhang@gmail.com',
-        iconClass: 'fa-solid fa-envelope fa-lg' 
-    },
-    {
-        text: 'RichardZhang01',
-        link: 'https://github.com/RichardZhang01',
-        iconClass: 'fab fa-github fa-lg' 
-    },
-    {
-        text: 'Richard Zhang',
-        link: 'https://www.linkedin.com/in/richard-zhiyuan-zhang/',
-        iconClass: 'fab fa-linkedin fa-lg' 
-    },
-]
+  {
+    text: "richardzhiyuanzhang@gmail.com",
+    link: "mailto:richardzhiyuanzhang@gmail.com",
+    iconClass: "fa-solid fa-envelope fa-lg",
+  },
+  {
+    text: "RichardZhang01",
+    link: "https://github.com/RichardZhang01",
+    iconClass: "fab fa-github fa-lg",
+  },
+  {
+    text: "Richard Zhang",
+    link: "https://www.linkedin.com/in/richard-zhiyuan-zhang/",
+    iconClass: "fab fa-linkedin fa-lg",
+  },
+];
